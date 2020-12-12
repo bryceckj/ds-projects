@@ -17,6 +17,11 @@ RUN apt update && \
     echo "conda activate base" >> ~/.bashrc
 
 RUN conda install -c conda-forge -y ${PKGS}
+
+EXPOSE 8888
+
+
+
     # conda create --name bryce_py38 python=3.8 && \
     # echo "conda activate bryce_py38" >> ~/.bashrc
 
@@ -29,5 +34,3 @@ RUN conda install -c conda-forge -y ${PKGS}
 # SHELL ["conda", "init", "bash"] && \
 #     ["echo", "'conda", "activate", "bryce_py38'", ">>", "~/.bashrc"] && \
 #     ["source", "~/.bashrc"]
-
-EXPOSE 8888

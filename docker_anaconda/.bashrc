@@ -111,5 +111,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-conda init bash
-conda activate bryce_py38
+# conda init bash
+# conda activate bryce_py38
